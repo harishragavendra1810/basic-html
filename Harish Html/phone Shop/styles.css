@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#6400e4;
+    --box-shadow:0px 3px 5px 0px rgba(0,0,0,0.34);
+    --hover-shadow:0px 4px 4px 0px rgba(3,3,3,0.561);
+    --nav-shadow:0px 0px 10px 0px rgba(0,0,0,0.100);
+    --light-black:#141c3a;
+}
+body{
+    font-family:"Nunito",sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(85, 192, 192);
+    color: black;
+    font-style: bold;
+}
+
+.title
+{
+    font-size: 20px;
+    margin: 8px;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: block;
+}
+
+.navbar-links a:hover
+{
+    background-color: #555;
+}
+
+.toggle-button
+{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width:400px)
+{
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links
+    {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active
+    {
+        display: flex;
+    }
+}
+.container
+{
+    width: 28%;
+    margin: 100px auto; 
+    border:3px solid lightblue;
+    padding: 10px ;
+    border-width: 10px;
+    border-radius: 4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin:30px 0;
+}
+
+form label
+{
+    margin: 5px;
+}
+
+form input[type="text"],input[type="password"]
+{
+    height: 55px;
+    margin: 5px 0;
+    border:0.5px solid #b8b8b85d;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 20px;
+    font-family: "Nunito",sans-serif;
+}
+
+form a{
+    margin:10px 0;
+    text-decoration: none;
+    color:var(--main-color);
+    font-weight: bold;
+}
+.buton
+{
+   text-align: center;
+}
+.btn{
+    background-color: rgb(146, 190, 190);
+    height: 50px;
+    width: 150px;
+    font-style: italic;
+    font-size: medium;
+}
+form input[type="submit"]
+{
+    box-shadow: var(--hover-shadow);
+    transform:translateY(3px)
+}

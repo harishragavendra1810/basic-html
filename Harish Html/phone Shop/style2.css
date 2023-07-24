@@ -1,0 +1,36 @@
+.Hr{
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgb(243, 245, 243);
+}
+.har{
+    text-align: center;
+    background-color: rgb(113, 185, 185);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(85, 192, 192);
+    color: black;
+    font-style: bold;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: block;
+}
+.navbar-links a:hover
+{
+    background-color: #555;
+}
